@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body bgcolor="sky-blue">
+    kjfkdj <center>
+        <h1>Students List
+            {%if cli%}
+        </h1>
+        <h1>Show Data</h1>
+        <h3>{{cli}}</h3>
+        <table border="1" height="300" width="500">
+            <tr>
+                <th>Place-Name</th>
+                <th>No. Of Person</th>
+                <th>Arrivals Date</th>
+                <th>Leaving Date</th>
+            </tr>
+            <tr>
+                {% for cl in data %}
+
+                <td>{{cl.P_name}</td>
+                <td>{{cl.Num_p}}</td>
+                <td>{{cl.Arriv_d}}</td>
+                <td>{{cl.Leav_d}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+    {% else %}
+    <h1>Database Empty</h1>
+    {% endif %}
+    </center>
+
+</body>
+
+</html>

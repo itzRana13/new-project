@@ -1,0 +1,45 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Students</title>
+    </head>
+    <body bgcolor="sky-blue">
+        <center>
+        <h1>Students List 
+            {%if data%}
+        </h1>
+        <h1>Show Data</h1>
+        <h3>{{data}}</h3>
+        <table border="1" height="300" width="500">
+            <tr>
+                <th>Std_Roll</th>
+                <th>Std_Name</th>
+                <th>Std_Fnm</th>
+                <th>Std_Email</th>
+                <th>Std_Course</th>
+                <th>Std_Pn</th>
+            </tr>
+            <tr>
+                {% for item in data %}
+                <td>{{item.Std_Roll}}</td>
+                <td>{{item.Std_Name}}</td>
+                <td>{{item.Std_Fnm}}</td>
+                <td>{{item.Std_Email}}</td>
+                <td>{{item.Std_Course}}</td>
+                <td>{{item.Std_Pn}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        </center>
+            {% else %}
+        <h1>Database Empty</h1>
+            {% endif %}
+
+
+        </center>
+
+    </body>
+    </html>

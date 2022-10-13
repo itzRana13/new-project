@@ -1,0 +1,116 @@
+   .bi{
+    color: white;
+    font-size: 23px;
+   }
+  .ico {
+    font-size: larger;
+    font-weight: 500;
+  }
+  .carousel-caption {
+    margin-bottom: 20%;
+  }
+
+  .carousel-inner {
+    height: 20%;
+  }
+
+  .section-title {
+    text-align: center;
+    margin-top: 40px;
+
+  }
+  #bk_n{
+    background-color:rgb(242, 249, 250);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    height: 420px;
+    border-radius: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+
+  .h_text {
+    border: 1px solid yellow;
+    background-color: rgb(235, 235, 22);
+    font-weight: 900;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  }
+ /* services */
+.services {
+    padding:40px;
+  position: relative;
+}
+.services .square {
+  height: 100px;
+  width: 100px;
+  margin: 30px auto 40px;
+  position: relative;
+  border-radius: 15px;
+  transform: rotate(45deg);
+  padding: 10px;
+  background-color:#7499f1;
+  box-shadow: 0px 0px 27px 0px #ccc;
+  border: 2px dotted #eaf3fa;
+}
+.square i {
+  transform: rotate(315deg);
+  display: block;
+  color: #eaf3fa;
+  font-size: 40px;
+  padding-top: 17px;
+  padding-right: 14px;
+}
+.services .square::before {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #fa9746;
+  content: '';
+}
+.services .square::after {
+  position: absolute;
+  left: 50px;
+  top: 66px;
+  width: 1px;
+  height: 88%;
+  background-color:#fa9746;
+  content: '';
+  transform: rotate(90deg);
+}
+.services .serv .num
+ {
+   width: 60px;
+   height: 60px;
+   background-color: #7499f1;
+   box-shadow: 0px 0px 15px 0px #00a9d3;
+   margin: -38px auto 15px auto;
+   border-radius: 50%;
+   color: #fff;
+   font-size: 30px;
+    padding-top: 7px;
+    border: 1px dashed;
+  }
+.services .serv h5 {color: #fa9746;}
+.services .serv p {color: #777;}
+.services .serv hr {
+  width: 30px;
+  border-top: 3px solid rgb(0 169 211);
+}
+.gal{
+  height:200px;
+  overflow: hidden;
+}
+.gal:hover{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.re-v{
+  border-radius: 100%;
+  width: 10%;
+  margin: 20px;
+}
